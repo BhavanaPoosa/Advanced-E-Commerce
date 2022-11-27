@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advance Ecomerce | Blog</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+         <a href="AdvEcomerce.html"><img src="wafflogo.jpg" width="120"></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login/Register</a>
+        </div>
+    </nav>
+
+    <div class="blog_n">
+        <h2>Food Zone!!</h2>
+        <div class="blog_container">
+            <div class="blog_img">
+                <p>"Waffles are just a triangle with a square".
+
+                    The Belgian Waffle outlet at Vile Parle (West) is near to Irla market. The tree outside the outlet covers the sign board which makes it little difficult to see the place but other than that it's on the main street.
+                    
+                    <br>Ambience:
+                    
+                    As you enter, there is a spacious place waiting to accommodate you with proper seating arrangements. The ambience is very colourful, yellowish & peaceful. Paintings on the wall + creatives frames looks so real & connects you to waffles.
+                    
+                    <br>Food:
+                    
+                    Red Velvet Shake - thick shake consisting of ice cream, red velvet cake & cream cheese was blended smooth & perfect for any evening.
+                    
+                    Nutella Shake - Nutella lovers can gorge on this for sure. It gave us Nutella feel, Nutella taste & Nutella love.
+                    
+                    Chocolate Overload Dark Waffles - dark is good when it's chocolate. One of the best to taste till date. Crispy waffles with more & more Chocolate was ecstasy.
+                    
+                    Blueberry Cream Cheese Waffles - blueberry toppings was in & around the waffles but there was no cream cheese. When we opened the waffles, there were bit of cheese pieces & when we reported it to the manager, he said this is how it's made. Needs improvement.
+                    
+                    Coffee Waffles - for the coffee lovers by default. It tasted coffee but the chocolate addition made it so sweet that we couldn't finish it. Needs improvement.
+                    
+                   <br> Service:
+                    
+                    There are plenty of people in the kitchen with decent service who will serve you on time.
+                    
+                    <br>Money wise:
+                    
+                    Prices are pocket friendly but can still be worked upon.
+                    
+                    If worked upon the waffles then this place can be the best in the vicinity.
+                    <br>
+                    -By theliceofliving.
+                    
+                </p>
+            </div>
+            <div class="blog_content">
+                <img src="kiki2waf.jpg" width="500">
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+
+
+    <div class="feed">
+        <h2>Write A Review</h2>
+        <div class="feed_form" >
+            <form name="submit-googlesheet" method="post">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email ID"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <textarea rows="5" cols="7" name="Review" placeholder="Write Your Review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+<footer>
+    <div class="footer_logo">
+        <a href="#"><img src="wafflogo.jpg" width="200"></a>
+    </div>
+    <div class="pages">
+        <h3>Pages</h3>
+        <a href="about.html">About Us</a>|
+        <a href="services.html">Services</a>|
+        <a href="blogs.html">Blogs</a>|
+        <a href="login.html">Login</a>|
+        <a href="">Sign Up</a>
+    </div>
+    <div class="doc">
+        <h3>Documents</h3>
+        <a href="">Privacy Policy</a>|
+        <a href="">Terms of Use</a>|
+        <a href="">Refund Policy</a>
+    </div>
+    <div class="social">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/waffleloveutah/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/waffluv/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/waffluv?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.pinterest.com/pin/389772542723289571/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></i></a>
+    </div>
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="https://api.WhatsApp.com/send?phone=+919876543210 " target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="tel: +919876543210"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="mailto: support@wafflelove.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <hr>
+    <p>Copyright &copy; 2021 Waffle Love. All Rights Reserved.</p>
+</footer>    
+
+
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzW6p9HFfQ6J1nIS9C407nHOOlrJNP9J791UK1RXrS_LqCSSBaRYIGU2ksmciY-F4QFOg/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank you for your review.Hope you had great dessert with us..."))
+                .catch(error => console.error('Error!', error.message))
+            })    
+
+</script>
+
+</body>
+
+</html>

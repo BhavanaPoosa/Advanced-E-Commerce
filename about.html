@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advance Ecomerce | About Us</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+         <a href="AdvEcomerce.html"><img src="wafflogo.jpg" width="120"></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login/Register</a>
+        </div>
+    </nav>
+
+
+    <div class="about_us">
+        <h2>ABOUT US</h2>
+        <div class="about_content">
+            <p>
+                If we were to look back at the one precise moment when The Waffle love Co. sprung to life, it was when we, while on a food experimentation spree while working internationally, stumbled upon this delectable, symmetrically-patterned and unique dessert cuisine that we couldn’t wait to take back with us to our country. We carefully packaged this idea and took it back with us all the way to India, where it eventually unfolded itself and took the form of the popular food franchise, The wafflelove Co. was founded in 2015, with its foundations firmly built on the values of excellence, simplicity and affordability.
+            </p>
+        </div>
+<hr>        
+        <h2>Our Values</h2>
+        <p>
+            Our employees prides themselves on imbibing our values. Our values are taken seriously and upheld and practiced with integrity and intent. There are the 8 values we stand by.<br>
+            <div class="values_content">
+                <p><li>Consumer Comees First</li>
+                    <li>Be honest, display the highest levels of integrity</li>
+                    <li>Stand up, disagree & commit</li>
+                    <li>Exhibit bias for action</li>
+                    <li>Act like an owner</li>
+                    <li>Always be curious, always be learning</li>
+                    <li>Be humble</li>
+                    <li>Strive for excellence</li>
+                </p>
+            </div>
+        </p>
+            
+           
+            
+        
+    
+
+
+    <div class="feed">
+        <h2>Write A Review</h2>
+        <div class="feed_form" >
+            <form name="submit-googlesheet" method="post">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email ID"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <textarea rows="5" cols="7" name="Review" placeholder="Write Your Review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+<footer>
+    <div class="footer_logo">
+        <a href="#"><img src="wafflogo.jpg" width="200"></a>
+    </div>
+    <div class="pages">
+        <h3>Pages</h3>
+        <a href="about.html">About Us</a>|
+        <a href="services.html">Services</a>|
+        <a href="blogs.html">Blogs</a>|
+        <a href="login.html">Login</a>|
+        <a href="">Sign Up</a>
+    </div>
+    <div class="doc">
+        <h3>Documents</h3>
+        <a href="">Privacy Policy</a>|
+        <a href="">Terms of Use</a>|
+        <a href="">Refund Policy</a>
+    </div>
+    <div class="social">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/waffleloveutah/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/waffluv/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/waffluv?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.pinterest.com/pin/389772542723289571/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></i></a>
+    </div>
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="https://api.WhatsApp.com/send?phone=+919876543210 " target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="tel: +919876543210"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="mailto: support@wafflelove.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <hr>
+    <p>Copyright &copy; 2021 Waffle Love. All Rights Reserved.</p>
+</footer>    
+
+
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzW6p9HFfQ6J1nIS9C407nHOOlrJNP9J791UK1RXrS_LqCSSBaRYIGU2ksmciY-F4QFOg/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank you for your review.Hope you had great dessert with us..."))
+                .catch(error => console.error('Error!', error.message))
+            })    
+
+</script>
+
+</body>
+
+</html>
